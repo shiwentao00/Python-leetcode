@@ -102,9 +102,17 @@ a += "d"
 ```
 
 ### Heap
-The buil-in heap in Python is called "heapq":
+The buil-in heap in Python is called "heapq", it implements min heap:
 ```python
 nums = [1, 2, 3, 4]
+heapq.heapify(nums) # in-place
+heapq.heappop(nums)
+heapq.heappush(nums, x)
+```
+To implement max heap, simply negate all the numbers in nums:
+```python
+nums = [-1* x for x in nums]
+heapq.heapify(nums)
 ```
 
 
