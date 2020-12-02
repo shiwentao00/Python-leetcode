@@ -57,4 +57,32 @@ for v in a.values():
     print(v)
 ```
 
+### Replicating a list
+There are two ways to replicate a list. If the elements are immutable, we can do:
+```python
+a = [0] * 1000
+```
+However, if the elements are mutable, all the replications will be the same reference of the origianl elements. In this case, we need to use list comprehension:
+```python
+a = [set() for _ in range(1000)]
+```
+
+### Copy a list
+To make a copy instead of creating reference:
+```python
+a = [1, 2, 3]
+b = a.copy()
+b = a[:] # using slicing of entire array
+b = a[0:2] # slicing creates shallow copy
+```
+
+### Division
+There are two kinds of division:
+```python
+a // b # round down, even for negative number
+a / b # round to zero, for both positive and negative numbers
+```
+
+
+
 
