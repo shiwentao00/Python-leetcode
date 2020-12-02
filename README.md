@@ -104,6 +104,7 @@ a += "d"
 ### Heap
 The buil-in heap in Python is called "heapq", it implements min heap:
 ```python
+import heapq
 nums = [1, 2, 3, 4]
 heapq.heapify(nums) # in-place
 heapq.heappop(nums)
