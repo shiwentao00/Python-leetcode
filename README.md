@@ -1,8 +1,7 @@
-# Python-cheat-sheet
+# Python cheat sheet
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
-### 1. Sorting
-
+### Sorting
 To sort in-place:
 ```python
 a = [2, 1, 3]
@@ -15,8 +14,7 @@ x = sorted(a)
 x = sorted(a, reverse=True)
 ```
 
-### 2 Hashset
-
+### Hashset
 Hashset in Python is implemented as ```set()```:
 ```python
 a = set([1, 2, 3])
@@ -36,3 +34,27 @@ but it is not indexable. To index a hashset, convert it to list first:
 ```python
 list(a)[0]
 ```
+
+### Hashmap
+Hashmap is implemented as dictionary in Python:
+```python
+a = {}
+```
+To add an item:
+```python
+a[1] = 2
+```
+To iterate over key-value pairs:
+```python
+for k, v in a.items():
+    print(k, v)
+```
+To iterate over keys or values:
+```python
+for k in a.keys():
+    print(k)
+for v in a.values():
+    print(v)
+```
+
+
