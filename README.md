@@ -83,6 +83,28 @@ a // b # round down, even for negative number
 a / b # round to zero, for both positive and negative numbers
 ```
 
+### XOR
+```python
+a ^ b
+```
 
+### Infinity
+```python
+a = float('inf')
+b = float('-inf')
+```
+
+### String
+String is immutable, so the variable is re-assigned when doing this:
+```python
+a = "abc"
+a += "d"
+```
+
+### Heap
+The buil-in heap in Python is called "heapq":
+```python
+nums = [1, 2, 3, 4]
+```
 
 
