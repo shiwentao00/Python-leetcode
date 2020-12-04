@@ -76,6 +76,18 @@ b = a[:] # using slicing of entire array
 b = a[0:2] # slicing creates shallow copy
 ```
 
+### Reverse a list
+To reverse in-place:
+```python
+a= [1, 2, 3]
+a.reverse()
+```
+T return a copy of reversed list, use slicing:
+```python
+b = a[::-1]
+```
+
+
 ### Division
 There are two kinds of division:
 ```python
