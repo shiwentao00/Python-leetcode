@@ -142,3 +142,4 @@ class Shark:
         self.name = name # can be acessed from outside
         age = age # can NOT be acessed from outside
 ```
+...
