@@ -134,7 +134,7 @@ acsii_c = ord('c') # convert to ascii value
 char_c = chr(acsii_c) # convert back to character
 ```
 
-### class variable and instance variable
+### Class variable and instance variable
 ```python
 class Shark:
     animal_type = "fish" # class variable
