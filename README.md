@@ -128,4 +128,17 @@ nums = [-1* x for x in nums]
 heapq.heapify(nums)
 ```
 
+### ASCII value of a character
+```python
+acsii_c = ord('c') # convert to ascii value
+char_c = chr(acsii_c) # convert back to character
+```
 
+### class variable and instance variable
+```python
+class Shark:
+    animal_type = "fish" # class variable
+    def __init__(self, name, age):
+        self.name = name # can be acessed from outside
+        age = age # can NOT be acessed from outside
+```
