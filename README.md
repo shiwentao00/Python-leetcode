@@ -112,6 +112,17 @@ String is immutable, so the variable is re-assigned when doing this:
 a = "abc"
 a += "d"
 ```
+If you want to do a lot of string concatenation, it is better to convert it into a list first:
+```python
+s = "abcd"
+s = list(s)
+s.append("e")
+```
+To convert the char list back to string, use the ```join``` function:
+```python
+str1 = "" 
+new_s = str1.join(s) 
+```
 
 ### Heap
 The buil-in heap in Python is called "heapq", it implements min heap:
