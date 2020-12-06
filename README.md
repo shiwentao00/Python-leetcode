@@ -153,4 +153,10 @@ class Shark:
         self.name = name # can be acessed from outside
         age = age # can NOT be acessed from outside
 ```
-...
+### Tree
+Inser a tree node with value val:
+```python
+node.left = TreeNode(val)
+or 
+node.right = TreeNode(val)
+```
