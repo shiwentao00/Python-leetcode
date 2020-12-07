@@ -120,8 +120,7 @@ s.append("e")
 ```
 To convert the char list back to string, use the ```join``` function:
 ```python
-str1 = "" 
-new_s = str1.join(s) 
+s = "".join(s) 
 ```
 
 ### Heap
