@@ -123,6 +123,19 @@ To convert the char list back to string, use the ```join``` function:
 s = "".join(s) 
 ```
 
+### Binary addition on strings of 1 and 0
+```python
+a, b = "11", "1" # binary numbers as string
+s, c = int(a, 2), int(b, 2) # convert to integer with base 2 (3, 1).
+
+# bit manipulation to implement addition
+while c != 0:
+    s, c = s ^ c, (s & c) << 1 
+    
+return bin(s)[2:] # convert to binary with bin function, need to remove first two characters "0b".
+return "{0:b}".format(s) # or we can convert inteter directy to string with format() by specifying binary.
+```
+
 ### Heap
 The buil-in heap in Python is called "heapq", it implements min heap:
 ```python
