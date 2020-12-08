@@ -87,6 +87,11 @@ T return a copy of reversed list, use slicing:
 b = a[::-1]
 ```
 
+### Swap two values in a list
+To swap two values in a list:
+```python
+a[left], a[right] = a[right], a[left]
+```
 
 ### Division
 There are two kinds of division:
