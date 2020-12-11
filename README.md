@@ -93,6 +93,13 @@ To swap two values in a list:
 a[left], a[right] = a[right], a[left]
 ```
 
+### Delete an item from a list
+```python
+a = [1, 2, 3, 4, 5]
+a.pop() # pop last item, O(1) time
+a.pop(i) # delete item at index i, O(N) amortized time because of shifting
+```
+
 ### Division
 There are two kinds of division:
 ```python
