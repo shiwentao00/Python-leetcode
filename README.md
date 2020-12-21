@@ -203,7 +203,7 @@ The defaultdict class is the same as a dictionary, except that it never raises v
 # Define a function to return a default 
 # value for keys that is not present 
 def def_value(): 
-    return "Not Present"
+    return "not valid key"
       
 # Defining the dict 
 d = defaultdict(def_value) 
