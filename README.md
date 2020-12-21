@@ -196,3 +196,21 @@ Insert a dummy head node
 dummy = listNode(-1)
 dummy.next = head
 ```
+
+### Defaultdict
+The defaultdict class is the same as a dictionary, except that it never raises valueError. 
+```python
+# Define a function to return a default 
+# value for keys that is not present 
+def def_value(): 
+    return "Not Present"
+      
+# Defining the dict 
+d = defaultdict(def_value) 
+d["a"] = 1
+d["b"] = 2
+  
+print(d["a"]) 
+print(d["b"]) 
+print(d["c"]) 
+```
