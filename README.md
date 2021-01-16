@@ -177,7 +177,11 @@ The nlargest() function of the Python module heapq returns the specified number 
 ```python
 iterable = [6,1,7,9,3,5,4]
 k = 3
-largests = heapq.nlargest(k, iterable) # O(nlogk) time, maintain a heap of size k, iterate over the list n times.
+
+# O(nlogk + klogk) time, maintain a heap of size k, iterate over the list n times.
+# The result is sorted reversely in the end, which is O(klogk).
+# Equivalent to: sorted(iterable, key=key, reverse=True)[:k] (or [0:k]).
+largests = heapq.nlargest(k, iterable) 
 ```
 
 To implement max heap, simply negate all the numbers in nums:
