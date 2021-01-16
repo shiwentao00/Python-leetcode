@@ -169,15 +169,15 @@ The buil-in heap in Python is called "heapq", it implements min heap:
 ```python
 import heapq
 nums = [1, 2, 3, 4]
-heapq.heapify(nums) # in-place, O(N)
+heapq.heapify(nums) # in-place, O(N) time
 heapq.heappop(nums)
 heapq.heappush(nums, x)
 ```
 The nlargest() function of the Python module heapq returns the specified number of largest elements from a Python iterable like a list, tuple and others.
 ```python
 iterable = [6,1,7,9,3,5,4]
-selectCount = 3
-largests = heapq.nlargest(selectCount, iterable);
+k = 3
+largests = heapq.nlargest(k, iterable) # O(nlogk) time, maintain a heap of size k, iterate over the list n times.
 ```
 
 To implement max heap, simply negate all the numbers in nums:
