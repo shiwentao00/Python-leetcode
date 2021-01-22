@@ -151,6 +151,17 @@ To convert the char list back to string, use the ```join``` function:
 s = "".join(s) 
 ```
 
+To break up a string from a specified seperator and return a list of string:
+```python
+text= 'Love thy neighbor'
+# splits at space
+print(text.split()) =>(print as) ['Love', 'thy', 'neighbor']
+
+grocery = 'Milk, Chicken, Bread'
+# splits at ','
+print(grocery.split(', ')) => (print as) ['Milk', ' Chicken', ' Bread']
+```
+
 ### Binary addition on strings of 1 and 0
 ```python
 a, b = "11", "1" # binary numbers as string
