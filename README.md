@@ -187,6 +187,10 @@ heapq.heapify(nums) # in-place, O(N) time
 heapq.heappop(nums)
 heapq.heappush(nums, x)
 ```
+To access the top of the heap, use 0 index:
+```python
+heap_top = nums[0]
+```
 The nlargest() function of the Python module heapq returns the specified number of largest elements from a Python iterable like a list, tuple and others.
 ```python
 iterable = [6,1,7,9,3,5,4]
