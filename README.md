@@ -247,7 +247,7 @@ def def_value():
     return "not valid key"
       
 # Defining the dict 
-d = defaultdict(def_value) 
+d = collections.defaultdict(def_value) 
 d["a"] = 1
 d["b"] = 2
   
@@ -255,7 +255,11 @@ print(d["a"])
 print(d["b"]) 
 print(d["c"]) 
 ```
-
+If we want the deafaultdict to use empty list/set as default, we can initialize by passing the list/set function:
+```python
+d1 = collections.defaultdict(list)
+d2 = collections.defaultdict(set)
+```
 ### Array
 Initiliaze a 2d-array, m * n --> m rows  n columns
 ```python
