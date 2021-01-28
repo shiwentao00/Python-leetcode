@@ -281,7 +281,9 @@ Initiliaze a 2d-array, m * n --> m rows  n columns
 2d_array = [[0] * n for _ in range(m)]  
 ```
 ### Python reference copy
-List is mutable.
+List, dictionary is mutable.
+String, tuple is immutable.
+Use list as an example:
 ```python
 a.append(b.copy()) (when b will change)
 or
