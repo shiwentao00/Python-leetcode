@@ -280,4 +280,10 @@ Initiliaze a 2d-array, m * n --> m rows  n columns
 ```python
 2d_array = [[0] * n for _ in range(m)]  
 ```
-
+### Python reference copy
+List is mutable.
+```python
+a.append(b.copy()) (when b will change)
+or
+a.append(b[:]) (when b will change)
+```
