@@ -4,6 +4,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ### About Python
 * [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
 * [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
+* [Division](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_division.md)
 
 ### Data Structures
 * [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
@@ -21,12 +22,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 
 
-### Division
-There are two kinds of division:
-```python
-a // b # round down, even for negative number
-a / b # round to zero, for both positive and negative numbers
-```
+
 
 ### XOR
 ```python
