@@ -2,7 +2,8 @@
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### About Python
-* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/OOP.md)
+* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/OOP.md)\
+* [ASCII]()
 * [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
 * [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
 * [Division](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_division.md)
@@ -22,29 +23,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/implement_sort.md)
 * [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/binary_search.md)
 
-### Tricks
+### Useful tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_connected_chain.md)
 * [Dummy_head](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_linked_list.md)
-
-
-
-
-
-
-### ASCII value of a character
-```python
-acsii_c = ord('c') # convert to ascii value
-char_c = chr(acsii_c) # convert back to character
-```
-
-
-
-
-
-
-
-
-
-
-
 
