@@ -6,28 +6,10 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ## Data Structures
 
 ## Algorithms
-* [Built-in sorting of Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
+* [Built-in sorting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
+* [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
 
-### Hashset
-Hashset in Python is implemented as ```set()```:
-```python
-a = set([1, 2, 3])
-```
-To add, remove, and empty the set:
-```python
-a.add(4)
-a.remove(3)
-a.clear()
-```
-Hashset is iterable,
-```python
-for x in a:
-    print(x)
-```
-but it is not indexable. To index a hashset, convert it to list first:
-```python
-list(a)[0]
-```
+
 
 ### Hashmap
 Hashmap is implemented as dictionary in Python:
