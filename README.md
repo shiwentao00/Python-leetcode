@@ -12,6 +12,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
 * [Built-in hashmap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashmap.md)
 * [Built-in string](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_string.md)
+* [Built-in array](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_array.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
 
 ### Algorithms
@@ -61,11 +62,6 @@ dummy.next = head
 ```
 
 
-### Array
-Initiliaze a 2d-array, m * n --> m rows  n columns
-```python
-2d_array = [[0] * n for _ in range(m)]  
-```
 
 
 
