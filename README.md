@@ -2,6 +2,7 @@
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### About Python
+* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/OOP.md)
 * [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
 * [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
 * [Division](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_division.md)
@@ -36,14 +37,7 @@ acsii_c = ord('c') # convert to ascii value
 char_c = chr(acsii_c) # convert back to character
 ```
 
-### Class variable and instance variable
-```python
-class Shark:
-    animal_type = "fish" # class variable
-    def __init__(self, name, age):
-        self.name = name # can be acessed from outside
-        age = age # can NOT be acessed from outside
-```
+
 
 
 
