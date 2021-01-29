@@ -17,8 +17,9 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
 
 ### Algorithms
-* [Built-in sorting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
-
+* [Built-in sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
+* [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/implement_sort.md)
+* [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/binary_search.md)
 
 ### Tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_connected_chain.md)
