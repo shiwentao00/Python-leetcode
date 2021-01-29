@@ -1,14 +1,14 @@
 # Python cheat sheet
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
-## About Python
+### About Python
 
-## Data Structures
+### Data Structures
 * [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
 * [Built-in hashmap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashmap.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
 
-## Algorithms
+### Algorithms
 * [Built-in sorting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
 
 
