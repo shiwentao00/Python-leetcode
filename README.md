@@ -21,6 +21,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 ### Tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_connected_chain.md)
+* [Dummy_head](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_linked_list.md)
 
 
 
@@ -54,12 +55,7 @@ Delete a leaf node, node:
 node = None
 ```
 
-### Linked-list 
-Insert a dummy head node
-```python
-dummy = listNode(-1)
-dummy.next = head
-```
+
 
 
 
