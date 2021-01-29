@@ -2,7 +2,7 @@
 ## Binary Search
 Binary search performs search on a sorted array with O(logN) time. There are two templates for binary search.
 
-Template 1, basic binary search, used to when we don't need access to mid index's neighbor.
+Template 1, basic binary search, for cases where we don't need access to <em>mid</em> index's neighbor.
 ```python
 def binary_search(nums, target):
     left, right = 0, len(nums) - 1
