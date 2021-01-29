@@ -218,6 +218,22 @@ Heap elements can be tuples. This is useful for assigning comparison values (suc
 >>> heappop(h)
 (1, 'write spec')
 ```
+The second element in the tuple will be sorted as well:
+```python
+a = [(1, 3),(2,5), (3, 0),(2, 1), (1,2), (1,4), (3, -1)]
+heapq.heapify(a)
+while a:
+    print(heapq.heappop(a))
+```
+```
+(1, 2)
+(1, 3)
+(1, 4)
+(2, 1)
+(2, 5)
+(3, -1)
+(3, 0)
+```
 
 ### ASCII value of a character
 ```python
