@@ -6,7 +6,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ## Data Structures
 
 ## Algorithms
-* [Built-in sorting of Python](Python-cheat-sheet/built_in_sort.md)
+* [Built-in sorting of Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
 
 ### Hashset
 Hashset in Python is implemented as ```set()```:
