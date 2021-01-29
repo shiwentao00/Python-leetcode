@@ -13,6 +13,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in hashmap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashmap.md)
 * [Built-in string](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_string.md)
 * [Built-in array](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_array.md)
+* [Tree](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/tree.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
 
 ### Algorithms
@@ -42,18 +43,7 @@ class Shark:
         self.name = name # can be acessed from outside
         age = age # can NOT be acessed from outside
 ```
-### Tree
-Insert a tree node with value val:
-```python
-node.left = TreeNode(val)
-or 
-node.right = TreeNode(val)
-```
 
-Delete a leaf node, node:
-```python
-node = None
-```
 
 
 
