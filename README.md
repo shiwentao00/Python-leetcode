@@ -4,38 +4,17 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ## About Python
 
 ## Data Structures
+* [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
+* [Built-in hashmap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashmap.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
+
 ## Algorithms
 * [Built-in sorting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
-* [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
 
 
 
-### Hashmap
-Hashmap is implemented as dictionary in Python:
-```python
-a = {}
-```
-To add an item:
-```python
-a[1] = 2
-```
-To remove an item by key:
-```python
-a.pop(1) # remove key 1
-```
-To iterate over key-value pairs:
-```python
-for k, v in a.items():
-    print(k, v)
-```
-To iterate over keys or values:
-```python
-for k in a.keys():
-    print(k)
-for v in a.values():
-    print(v)
-```
+
+
 
 ### Replicating a list
 There are two ways to replicate a list. If the elements are immutable, we can do:
