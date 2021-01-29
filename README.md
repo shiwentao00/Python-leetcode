@@ -15,6 +15,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in hashmap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashmap.md)
 * [Built-in string](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_string.md)
 * [Built-in array](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_array.md)
+* [Built-in list](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_list.md)
 * [Tree](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/tree.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/using_heapq.md)
 
