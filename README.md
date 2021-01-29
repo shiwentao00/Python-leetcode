@@ -2,7 +2,8 @@
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### About Python
-* [Python yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
+* [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
+* [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
 
 ### Data Structures
 * [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
@@ -122,15 +123,7 @@ Initiliaze a 2d-array, m * n --> m rows  n columns
 ```python
 2d_array = [[0] * n for _ in range(m)]  
 ```
-### Python reference copy
-List, dictionary is mutable.
-String, tuple is immutable.
-Use list as an example:
-```python
-a.append(b.copy()) (when b will change)
-or
-a.append(b[:]) (when b will change)
-```
+
 
 
 
