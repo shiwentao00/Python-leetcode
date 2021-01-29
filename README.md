@@ -6,6 +6,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
 * [Division](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_division.md)
 * [XOR](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_xor.md)
+* [Infinity](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_infinity.md)
 
 ### Data Structures
 * [Built-in hashset](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_hashset.md)
@@ -21,15 +22,6 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 
 
-
-### Infinity
-```python
-a = float('inf')
-b = float('-inf')
-
-a = math.inf
-b = - math.inf  # no need to import math
-```
 
 ### String
 String is immutable, so the variable is re-assigned when doing this:
