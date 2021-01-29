@@ -2,7 +2,7 @@
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### About Python
-* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/OOP.md)\
+* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/OOP.md)
 * [ASCII]()
 * [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
 * [Reference copy](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_reference_copy.md)
