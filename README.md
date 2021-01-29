@@ -13,7 +13,8 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in sorting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/built_in_sort.md)
 
 
-
+### Tricks
+* [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_connected_chain.md)
 
 
 
@@ -131,10 +132,6 @@ or
 a.append(b[:]) (when b will change)
 ```
 
-### Mod
-When you want to design a chain that connect 0,1,..9 as a circle, you can use % 10.
-```python
--1 % 10 = 9
-```
+
 
 
