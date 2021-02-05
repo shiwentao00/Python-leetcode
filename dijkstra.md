@@ -3,7 +3,7 @@ Dijkstra's algorithm can be implemented with heap since it looks for the closest
         def dijkstra(start):
             # store the checked nodes, the values are the 
             # distance to starting point
-            visited_nodes = {}
+            visited = {}
             
             # initialize a heap storing nodes and their distances
             # to the start node
@@ -17,14 +17,16 @@ Dijkstra's algorithm can be implemented with heap since it looks for the closest
                 dist, node = heapq.heappop(heap)
                 
                 # simply remove the visited nodes from heap
-                if node in checked_nodes:
-                    continue    
-                    
-                visited_nodes[node] = dist
+                if node in checked_nodes: continue    
                 
-                # relax connected nodes
+                # this is the SHORTEST path from start to node,
+                # we will not visit this node in the future
+                visited[node] = dist
+                
+                # edge relaxation
                 for neighbor, weight in graph[node]:
-                    heapq.heappush(heap, (dist + weight, neighbor))
+                    if neibhor not in visited:
+                        heapq.heappush(heap, (dist + weight, neighbor))
                 
             return visited_nodes
 ```
