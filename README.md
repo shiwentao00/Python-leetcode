@@ -25,6 +25,9 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/implement_sort.md)
 * [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/binary_search.md)
 
+### Graph Algorithms
+* [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/dijkstra.md)
+
 ### Useful tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_connected_chain.md)
 * [Dummy_head](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/trick_linked_list.md)
