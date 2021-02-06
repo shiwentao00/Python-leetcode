@@ -8,9 +8,14 @@
 
 ### matrix (m,n), get matrix size
 ```python
-a = [[1,2], [3,4], [5,6]]
-m = len(a) => m = 3 // row 
-n = len(a[0]) => n = 2 // column
+a=[[1,2,5],[3,4,7]]
+m = len(a)
+n = len(a[0])
+print(m, n)
+```
+output is
+```python
+2 3
 ```
 
 ### matrix (m,n), get j-th column 
