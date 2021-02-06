@@ -2,7 +2,7 @@
 Two implementations of the Dijkstra's Algorithm. One computes the shortest
 min_dist from start to all nodes, the other one computes the shortest path 
 from start to end, end return the path. For the example here, we use the graph
-provided in this youtube video:
+provided in this [youtube video](https://www.youtube.com/watch?v=pSqmAO-m7Lk&t=631s):
 
 <p align="center">
 <img width="600" height="400" src="../figures/dijkstra_0.png">
