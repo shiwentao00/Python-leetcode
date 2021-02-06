@@ -8,6 +8,7 @@ provided in this youtube video:
 <img width="600" height="400" src="../figures/dijkstra_0.png">
 </p>   
 
+First version, returns the shortest distances of all nodes to the starting point.
 ```python
 def dijkstra(graph, n, start):
     # graph: adjacency list for O(1) access to neighbors
@@ -54,7 +55,18 @@ def dijkstra(graph, n, start):
 
     return min_dist
 ```
+Testing:
+```python
+# min_dist from 0 to all the points
+min_dist = dijkstra(graph, n, start=0)
+print(min_dist)
+```
+out:
+```
+[0, 4, 1, 7, 9, 10]
+```
 
+Second version, returns the shortest path from start to end.
 ```python
 def dijkstra_path(graph, n, start, end):
     # return the shortest path and length from start to end
@@ -91,18 +103,7 @@ def dijkstra_path(graph, n, start, end):
     return list(reversed(path)), min_dist[end]
 ```
 
-Test first one:
-```python
-# min_dist from 0 to all the points
-min_dist = dijkstra(graph, n, start=0)
-print(min_dist)
-```
-out:
-```
-[0, 4, 1, 7, 9, 10]
-```
-
-Test second one:
+Testing:
 ```python
 # find path
 path, path_len = dijkstra_path(graph, n, start=0, end=5)
