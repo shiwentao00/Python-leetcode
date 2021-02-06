@@ -2,7 +2,7 @@
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### Python Features
-* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/python_features/OOP.md)
+* [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_features/OOP.md)
 * [Mutable and immutable objects](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/mutable-vs-immutable.md)
 * [ASCII]()
 * [Yield](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_yield.md)
