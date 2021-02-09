@@ -27,6 +27,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 ### Graph Algorithms
 * [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/dijkstra.md)
+* [Floyd-Warshall Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/floyd-warshall.md)
 
 ### Other tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_connected_chain.md)
