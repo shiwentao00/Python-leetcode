@@ -1,7 +1,7 @@
 ### Dijkstra's Algorithm
 Two implementations of the Dijkstra's Algorithm. One computes the shortest
 min_dist from start to all nodes, the other one computes the shortest path 
-from start to end, end return the path. For the example here, we use the graph
+from start to end, end return the path. The time complexity is O((V + E)logV). For the example here, we use the graph
 provided in this [youtube video](https://www.youtube.com/watch?v=pSqmAO-m7Lk&t=631s):
 
 <p align="center">
