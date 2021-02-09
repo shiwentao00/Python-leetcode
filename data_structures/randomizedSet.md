@@ -1,5 +1,5 @@
 ### Randomized Set
-This is a problem from Leetcode 380. The randomized set data structure offers O(1) insertion, O(1) deletion, and O(1) time to return a random content. It is very useful in samling algorithms like Markov chain Monte Carlo. Hashset offers O(1) insertion and deletion, but it does not offer random access, so we need to convert the set into list first, which is O(N). List provides O(1) insertion, O(1) random access, but deletion is O(N). Here we can improve the list with hashmap to get the job done.   
+This is a problem from Leetcode 380. The randomized set data structure offers O(1) insertion, O(1) deletion, and O(1) time to return a random content. It is very useful in sampling algorithms like Markov chain Monte Carlo. Hashset offers O(1) insertion and deletion, but it does not offer random access, so we need to convert the set into list first, which is O(N). List provides O(1) insertion, O(1) random access, but deletion is O(N). Here we can improve the list with hashmap to get the job done.   
 
 The idea is to use the list as main data container. We maintain the indices of contents use another hashmap. Upon deleting, we swap the element to delete with the last element, and delete it. Then we update the previous last element's index. The whole oeprtion takes O(1) time. Below is the implementation:
 ```python
