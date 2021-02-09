@@ -19,6 +19,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in list](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_list.md)
 * [Tree](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/tree.md)
 * [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/using_heapq.md)
+* [Randomized Set](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/randomizedSet.md)
 
 ### Algorithms
 * [Built-in sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/built_in_sort.md)
