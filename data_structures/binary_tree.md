@@ -97,6 +97,7 @@ My method uses another visited hashset to keep track of visited nodes:
             # if there is no left and right child, or both children have
             # been visited, we can pop the stack. 
             else:
+                # post order
                 node = stack.pop()
                 res.append(node.val)
                 
