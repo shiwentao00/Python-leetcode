@@ -129,5 +129,58 @@ Another method from Leetcode community, not tested:
 ```
 
 ### Construct binary tree from preorder and postorder
+The solution below passed the test of Leetcode 889, but is not elegant enough. O(N) time. None that preorder and postorder arrays can not determine the binary tree. For example, pre = [1, 2, 4, 5], post = [4, 5, 2, 1]. In this solution, we always construct the subtree as left subtree when we can construct on either side.
 ```python
+    def constructFromPrePost(self, pre: List[int], post: List[int]) -> TreeNode:
+        post_indices = {val: i for i, val in enumerate(post)}
+        
+        def helper(pre_s, pre_e, post_s, post_e):
+            root_val = pre[pre_s]
+            root = TreeNode(val=root_val)
+            length = pre_e - pre_s + 1
+            if length == 1:
+                return root
+            
+            # construct left subtree
+            left_root_val = pre[pre_s + 1]
+            left_post_e = post_indices[left_root_val]
+            left_post_s = post_s
+            left_pre_s = pre_s + 1
+            left_pre_e = left_post_e - left_post_s + left_pre_s
+            root.left = helper(left_pre_s, left_pre_e, left_post_s, left_post_e)
+            
+            # construct right subtree
+            right_root_val = post[post_e - 1]
+            # if right root == left root, don't need to construct
+            # right subtree. (there are multiple answers in this case)
+            if right_root_val != left_root_val:
+                right_post_e = post_e - 1
+                right_post_s = left_post_e + 1
+                right_pre_s = left_pre_e + 1
+                right_pre_e = pre_e
+                root.right = helper(right_pre_s, right_pre_e, right_post_s, right_post_e)
+                
+            return root
+        
+        return helper(0, len(pre) - 1, 0, len(post) - 1)
+```
+
+This is Leetcode's solution. However, this solution taks O(N^2) time, because it uses linear search to find index.
+```python
+    def constructFromPrePost(self, pre, post):
+        def make(i0, i1, N):
+            if N == 0: return None
+            root = TreeNode(pre[i0])
+            if N == 1: return root
+
+            # L = post.index(pre[1]) + 1
+            for L in xrange(N):
+                if post[i1 + L - 1] == pre[i0 + 1]:
+                    break
+
+            root.left = make(i0 + 1, i1, L)
+            root.right = make(i0 + L + 1, i1 + L, N - 1 - L)
+            return root
+
+        return make(0, 0, len(pre))
 ```
