@@ -125,7 +125,42 @@ Another method from Leetcode community, not tested:
 ```
 
 ### Construct binary tree from preorder and inorder
+The method below is trick but easy to understand. The build method is a reursive pre-order traveral of the binary tree. Therefore, the order of builing nodes is exactly pre-order, so we can use a global pre_idx to select current node from the preorder list.
 ```python
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
+        if not preorder:
+            return None
+        
+        pre_idx = 0
+        
+        # find index of an element in inorder in O(1)
+        in_indices = {val: key for key, val in enumerate(inorder)}
+        
+        def build(in_start, in_end):
+            nonlocal pre_idx
+            
+            # root node
+            root_val = preorder[pre_idx]
+            root = TreeNode(val=root_val)
+            
+            in_idx = in_indices[root_val]
+            
+            # the build method is a pre-order recursive
+            # traveral, so we just need to increase the 
+            # index of preorder one by one.
+            pre_idx += 1
+            
+            # left sub-tree
+            if in_idx > in_start:
+                root.left = build(in_start, in_idx - 1)
+            
+            # right sub-tree
+            if in_idx < in_end:
+                root.right = build(in_idx + 1, in_end)
+            
+            return root
+        
+        return build(0, len(preorder) - 1)
 ```
 
 ### Construct binary tree from preorder and postorder
