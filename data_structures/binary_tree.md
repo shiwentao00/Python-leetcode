@@ -120,10 +120,6 @@ Another method from Leetcode community, not tested:
         return res
 ```
 
-### Construct binary tree from inorder and posterorder
-```python
-```
-
 ### Construct binary tree from preorder and inorder
 The method below is trick but easy to understand. The build method is a reursive pre-order traveral of the binary tree. Therefore, the order of builing nodes is exactly pre-order, so we can use a global pre_idx to select current node from the preorder list.
 ```python
@@ -161,6 +157,41 @@ The method below is trick but easy to understand. The build method is a reursive
             return root
         
         return build(0, len(preorder) - 1)
+```
+
+### Construct binary tree from inorder and posterorder
+The key here is that the reverse of postorder is actully a preorder in (root->right->left). With this observation, we can use the same method when constructing from preorder and inorder.
+```python
+    def buildTree(self, inorder: List[int], postorder: List[int]) -> TreeNode:
+        if not inorder:
+            return None
+        
+        post_idx = len(postorder) - 1
+        
+        # find inorder index in O(1)
+        in_indices = {val: key for key, val in enumerate(inorder)}
+        
+        def build(in_start, in_end):
+            nonlocal post_idx
+            root_val = postorder[post_idx]
+            root = TreeNode(val=root_val)
+            
+            # index of the root in inorder
+            root_in_idx = in_indices[root_val]
+            
+            post_idx -= 1
+            
+            # build right subtree
+            if root_in_idx < in_end:
+                root.right = build(root_in_idx + 1, in_end)
+            
+            # build left subtree
+            if root_in_idx > in_start:
+                root.left = build(in_start, root_in_idx - 1)
+            
+            return root
+        
+        return build(0, len(inorder) - 1)
 ```
 
 ### Construct binary tree from preorder and postorder
