@@ -20,6 +20,12 @@ k = 3
 # The result is sorted reversely in the end, which is O(klogk).
 # Equivalent to: sorted(iterable, key=key, reverse=True)[:k] (or [0:k]).
 largests = heapq.nlargest(k, iterable) 
+
+# Another way to use the nlarget function is to pass a function as the key.
+# For example, sort the keys of a dictionary according to values.
+dict = {'a':2, 'b':3, 'c':1}
+heapq.nlargest(2, dict.keys(), dict.get)
+>>> ['b', 'a']
 ```
 
 To implement max heap, simply negate all the numbers in nums:
