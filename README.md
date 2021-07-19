@@ -31,6 +31,11 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/dijkstra.md)
 * [Floyd-Warshall Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/floyd-warshall.md)
 
+### Math
+* [Divide two integers]()
+* [Pow(X, n)]()
+* [sqrt(x]()
+
 ### Other tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_connected_chain.md)
 * [Dummy_head](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_linked_list.md)
