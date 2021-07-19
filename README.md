@@ -34,7 +34,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ### Math
 * [Divide two integers]()
 * [Pow(X, n)]()
-* [sqrt(x]()
+* [sqrt(x)]()
 
 ### Other tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_connected_chain.md)
