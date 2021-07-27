@@ -8,3 +8,4 @@ print(9^9)
 2
 0
 ```
+Using this property, we can quickly solve Leetcode 136 Single Number.
