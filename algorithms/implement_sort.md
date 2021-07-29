@@ -18,6 +18,7 @@ def quickSort(nums):
 ```
 
 ## Merge Sort
+Merge sort breaks the array into units of length 1, then combine them with sorted order.
 ```python
 def mergeSort(myList):
     if len(myList) > 1:
