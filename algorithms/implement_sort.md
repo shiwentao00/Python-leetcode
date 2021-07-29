@@ -19,3 +19,4 @@ def quickSort(nums):
 
 ## Merge Sort
 
+## Heap Sort
