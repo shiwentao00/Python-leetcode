@@ -38,6 +38,25 @@ Reursive traversal of a binary tree is trivial DFS:
 ```
 
 ### Iiterative in-order traversal:
+An implementation that is easy to understand and memorize:
+```python
+def inorderTraversal(self, root: TreeNode) -> List[int]:
+        stack = []
+        inorder = []
+        
+        while root or stack:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                root = stack.pop()
+                inorder.append(root.val)
+                root = root.right # do NOT add if root.right!!!!!
+                
+        return res
+```
+
+Another implementation:
 ```python
     # Time complexity is O(H + N), where
     # H is heigh of tree and N is number of 
@@ -52,25 +71,7 @@ Reursive traversal of a binary tree is trivial DFS:
         root = stack.pop()
         # in-order
         print(root.val)
-        root = root.right
-```
-
-Another in-order traversal (not tested yet), it is essentially the same as the previous solution:
-```python
-def inorderTraversal(self, root: TreeNode) -> List[int]:
-        stack = list()
-        res = list()
-        
-        while root or stack:
-            if root:
-                stack.append(root)
-                root = root.left
-            else:
-                curr = stack.pop()
-                res.append(curr.val)
-                root = curr.right
-                
-        return res
+        root = root.right # do NOT add if root.right!!!!!
 ```
 
 ### Iiterative post-order traversal:
