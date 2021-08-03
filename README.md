@@ -28,6 +28,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Boyer-Moore majority voting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/boyer-moore-voting.md)
 
 ### Graph Algorithms
+* [Topological Sort] (https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph_algorithms/topological_sort.md)
 * [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/dijkstra.md)
 * [Floyd-Warshall Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph_algorithms/floyd-warshall.md)
 
