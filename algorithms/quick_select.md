@@ -20,5 +20,42 @@ def quickSelect(nums, k_smallest):
 ```
 
 ### More efficient implementation and Leetcode 215: keth largest number in an array
+The difference of this implementation is that when partitioning the array to find the pivot, we do it in-place, which saves some space. In addtion, we always compare the index of pivot, so we don't have to recalculate k during the recursion.
 ```python
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        k = len(nums) - k + 1
+        k_idx = k - 1
+        
+        def partition(left, right):
+            """return a pivot index"""
+            pivot = nums[right]
+            
+            # write pointer
+            write_p = left
+            
+            # swap numbers <= pivot to left, and
+            # numbers > pivot to right
+            for i in range(left, right):
+                if nums[i] <= pivot:
+                    nums[write_p], nums[i] = nums[i], nums[write_p]
+                    write_p += 1
+                    
+            # swap the pivot number to the correct position
+            nums[write_p], nums[right] = nums[right], nums[write_p]
+            
+            return write_p
+        
+        def quickSelect(left, right, k_smallest_idx):
+            """return the kth smallest element"""
+            pivot_idx = partition(left, right)
+            if pivot_idx == k_smallest_idx:
+                return nums[pivot_idx]
+            elif pivot_idx > k_smallest_idx:
+                return quickSelect(left, pivot_idx - 1, k_smallest_idx)
+            else:
+                return quickSelect(pivot_idx + 1, right, k_smallest_idx)
+            
+        random.shuffle(nums)
+        return quickSelect(0, len(nums) - 1, k_idx)
 ```
