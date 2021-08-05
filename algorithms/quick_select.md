@@ -12,9 +12,9 @@ def quickSelect(nums, k_smallest):
 	right = [x for x in nums[0:-1] if x > pivot]
             
     if len(left) == k_smallest - 1:
-    	return pivot
+		return pivot
 	elif len(left) > k_smallest - 1:
-    	return quickSelect(left, k_smallest)
+		return quickSelect(left, k_smallest)
 	else:
 		return quickSelect(right, k_smallest - len(left) - 1)
 ```
