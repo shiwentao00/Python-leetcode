@@ -25,8 +25,10 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ### Algorithms
 * [Built-in sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/built_in_sort.md)
 * [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/implement_sort.md)
+* [Quick select]()
 * [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/binary_search.md)
 * [Boyer-Moore majority voting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/boyer-moore-voting.md)
+* [Fisher-Yates shuffling]()
 
 ### Graph Algorithms
 * [Topological Sort](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph_algorithms/topological_sort.md)
