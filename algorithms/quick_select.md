@@ -20,7 +20,7 @@ def quickSelect(nums, k_smallest):
 ```
 
 ### More efficient implementation and Leetcode 215: keth largest number in an array
-The difference of this implementation is that when partitioning the array to find the pivot, we do it in-place, which saves some space. In addtion, we always compare the index of pivot, so we don't have to recalculate k during the recursion.
+The difference of this implementation is that when partitioning the array to find the pivot, we do it in-place, which saves some space. In addtion, we always compare the index of pivot, so we don't have to recalculate k during the recursion. Lastly, it is worth to mention that *kth largest is n - k + 1 th smallest: k_smallest = n - k_largest + 1*.
 ```python
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
