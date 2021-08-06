@@ -1,4 +1,4 @@
-# Python cheat sheet
+# Leetcode notes in Python 
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
 ### Python Features
