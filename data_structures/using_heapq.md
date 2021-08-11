@@ -1,5 +1,5 @@
-### Heap
-The buil-in heap in Python is called "heapq", it implements min heap:
+## Heap
+The buil-in heap in Python is called "heapq", it implements a min heap:
 ```python
 import heapq
 nums = [1, 2, 3, 4]
