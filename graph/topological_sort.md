@@ -37,3 +37,5 @@ def topoSort(numNodes, edges):
                     
   # do something with removed to get your answer
 ```
+
+Note: topological sort can also be applied to Undirected graphs. In this case, the nodes to be removed should have degree of 1. Example: Leetcode 310 - Minimum Height Trees.
