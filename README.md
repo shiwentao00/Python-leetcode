@@ -42,6 +42,9 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Pow(X, n)]()
 * [sqrt(x)]()
 
+### Bit-wise Manipulation
+* [Sum of two integers]()
+
 ### Other tricks
 * [Connected chain](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_connected_chain.md)
 * [Dummy_head](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/other_tricks/trick_linked_list.md)
