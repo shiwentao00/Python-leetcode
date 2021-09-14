@@ -1,6 +1,11 @@
 # Leetcode notes in Python 
 Python cheat sheet for daily work and coding interveiws for those not good at memorizing.
 
+### Array
+* [Two-pointer algorithms]()
+* [Fisher-Yates shuffling]()
+* [Boyer-Moore majority voting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/boyer-moore-voting.md)
+
 ### Python Features
 * [OOP in Python](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_features/OOP.md)
 * [Mutable and immutable objects](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/python_features/mutable-vs-immutable.md)
@@ -27,9 +32,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/implement_sort.md)
 * [Quick select](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/algorithms/quick_select.md)
 * [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/binary_search.md)
-* [Boyer-Moore majority voting](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/boyer-moore-voting.md)
-* [Fisher-Yates shuffling]()
-* [Two-pointer algorithms]()
+
 
 ### Graph
 * [Topological Sort](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/topological_sort.md)
