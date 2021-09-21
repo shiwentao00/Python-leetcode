@@ -37,6 +37,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 ### Graph
 * [Topological Sort](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/topological_sort.md)
 * [Union Find](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/union_find.md)
+* [Kruskal's Algorithm]()
 * [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph/dijkstra.md)
 * [Floyd-Warshall Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph/floyd-warshall.md)
 
