@@ -19,13 +19,14 @@ for src, dst in edges:
 	def dfs(node):
 		while graph[node]:
 			# we pop this destination because we don't visit
-            # it anymore.
-            dst = graph[node].pop()
-            dfs(dst)
-                
-            result.append(node)
+			# it anymore.
+			dst = graph[node].pop()
+        	dfs(dst)
+			
+		# post-order traversal
+		result.append(node)
             
-        dfs(start)
+    dfs(start)
 		
 	# If all the edges are traversed, the result is correct.
 	# Reversed(result) is the order we traverse the graph.
