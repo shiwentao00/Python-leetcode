@@ -1,5 +1,5 @@
 ## Topological Sort
-Topological Sort algorithm finds a global order for all nodes in a directed acyclic graph (DAG). It is often used in applications to schedule tasks or detect loops in a DAG. The idea is simple: we keep removing the nodes with 0 indegree, until there is no removable nodes.
+Topological Sort algorithm finds a global order for all nodes in a directed acyclic graph (DAG). It is often used in applications to schedule tasks or detect loops in a DAG. The idea is simple: we keep removing the nodes with 0 indegree, until there is no removable nodes. The algorithm has O(V + E) time complexity and O(V + E) space complexity.
 
 ```python
 class Node:
