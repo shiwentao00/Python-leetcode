@@ -23,7 +23,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in array](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_array.md)
 * [Built-in list](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_list.md)
 * [Binary tree](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/binary_tree.md)
-* [Using the heapq API](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/using_heapq.md)
+* [Heap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/heap.md)
 * [Randomized set](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/randomizedSet.md)
 * [Trie](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/data_structures/trie.md)
 
