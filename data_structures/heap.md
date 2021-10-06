@@ -1,5 +1,5 @@
 ## Heap
-To implement heap with basic Python, see [here]((https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/heap.py)). The buil-in heap in Python is called "heapq", it implements a min heap:
+To implement heap with basic Python, see [here](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/heap.py). The buil-in heap in Python is called "heapq", it implements a min heap:
 ```python
 import heapq
 nums = [1, 2, 3, 4]
