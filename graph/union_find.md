@@ -56,14 +56,14 @@ The table below shows the time complexity of different variations, where N is th
 | Method | constructor | find | union | connected |   
 | --- | --- | --- | --- | --- |      
 | Quick Find | O(N) | O(1) | O(N) | O(1) |   
-| Quick Union | O(N) | O(logN), O(N) worst case | O(N) worst case | O(N) worst case |   
+| Quick Union | O(N) | O(logN), O(N) worst case | O(logN), O(N) worst case | O(logN), O(N) worst case |   
 | Union by Rank | O(N) | worst case O(logN) | worst case O(logN) | worst case O(logN) |    
 | Path Compression | O(N) | O(logN), O(N) worst case | O(logN), O(N) worst case | O(logN), O(N) worst case |    
-| Union by Rank with Path Compression | O(N) | O(&alpha(N)) | O(&alpha(N)) | O(&alpha(N)) |     
+| Union by Rank with Path Compression | O(N) | O(&alpha;(N)) | O(&alpha;(N)) | O(&alpha;(N)) |     
 
 
 1. Only using ```quick find```. This variation optimizes the ```find``` method by using a ```root``` array to store the roots of each node. 
 2. Only using ```quick union```. This variation uses array ```parent``` instead of ```root```. In this case, the ```find``` method has to climb up the tree to the root, and the worst case is where the tree is a linked list with a time complexity of O(N).
 3. Only using ```union by rank```. This variation uses an other array ```rank``` to store the heights of the trees. During the ```union``` operation, the root of the higher tree is always the root of unioned tree. The worst case is where each ```union``` operation unions two trees of the same height, and the time complexity is O(1 + logN) = O(logN).
 4. Only using ```path compression```. This variation improves the ```find``` method such that all nodes on the path are connected to their root directly as their parent. The average time for ```find``` is O(logN), which is the height of the tree. The worst case is where the tree is a linked list, and time is O(N).
-5. Use ```union by rank``` + ```path compression```. This is the final optimized form of Union-find. The time complexity is O(&alpha(N)), where &alpha(N) is called [Inverse Ackermann Function](https://en.wikipedia.org/wiki/Ackermann_function), which can be treated as constant time.
+5. Use ```union by rank``` + ```path compression```. This is the final optimized form of Union-find. The time complexity is O(&alpha;(N)), where &alpha;(N) is called [Inverse Ackermann Function](https://en.wikipedia.org/wiki/Ackermann_function), which can be treated as constant time.
