@@ -1,4 +1,4 @@
-### Dijkstra's Algorithm
+# Dijkstra's Algorithm
 Two implementations of the Dijkstra's Algorithm. One computes the shortest
 min_dist from start to all nodes, the other one computes the shortest path 
 from start to end, end return the path. The time complexity is O((V + E)logV). For the example here, we use the graph
@@ -8,6 +8,12 @@ provided in this [youtube video](https://www.youtube.com/watch?v=pSqmAO-m7Lk&t=6
 <img width="600" height="400" src="../figures/dijkstra_0.png">
 </p>   
 
+## Time Complexity
+The time complexity analysis is well explained in this [link](https://everythingcomputerscience.com/algorithms/Dijkstras_Algorithm.html):   
+
+"Every time the main loop executes, one vertex is extracted from the queue. Assuming that there are V vertices in the graph, the queue may contain O(V) vertices. Each pop operation takes O(log V) time assuming the heap implementation of priority queues. So the total time required to execute the main loop itself is O(V log V). In addition, we must consider the time spent in the function expand, which applies the function handle_edge to each outgoing edge. Because expand is only called once per vertex, handle_edge is only called once per edge. It might call push(v'), but there can be at most V such calls during the entire execution, so the total cost of that case arm is at most O(V log V). The other case arm may be called O(E) times, however, and each call to increase_priority takes O(log V) time with the heap implementation. Therefore the total run time is O(V log V + E log V), which is O(E log V) because V is O(E) assuming a connected graph."
+
+## Only Compute Length of Shortest Path
 First version, returns the shortest distances of all nodes to the starting point.
 ```python
 def dijkstra(graph, n, start):
@@ -66,6 +72,7 @@ out:
 [0, 4, 1, 7, 9, 10]
 ```
 
+## Returns the Shortest Path
 Second version, returns the shortest path from start to end.
 ```python
 def dijkstra_path(graph, n, start, end):
