@@ -40,6 +40,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Minimum Spanning Tree](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/minimum_spanning_tree.md)
 * [Hierholzer's Algorithm](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/hierholzer.md)
 * [Dijkstra's Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph/dijkstra.md)
+* [Bellman-ford Algorithm](https://github.com/Python-cheat-sheet/blob/main/graph/bellman-ford.md)
 * [Floyd-Warshall Algorithm](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/graph/floyd-warshall.md)
 
 ### Math
