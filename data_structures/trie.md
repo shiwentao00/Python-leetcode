@@ -1,6 +1,16 @@
 ## Trie
-[Trie](https://en.wikipedia.org/wiki/Trie) is a tree datastructure that stores prefixes. In some cases, it can be used as a replacement of hashset. 
+[Trie](https://en.wikipedia.org/wiki/Trie) is a tree datastructure that stores prefixes. In some cases, it can be used as a replacement of hashset. This doc is a summarization of [this Leetcode tutorial](https://leetcode.com/explore/learn/card/trie/147/basic-operations/1048/).
 
+### Complexity Compared with Hashtable
+Time Complexity:   
+1. The time complexity to search in hash table is typically O(1), but will be O(logN) in the worst time if there are too many collisions and we solve collisions using height-balanced BST.   
+2. The time complexity to search in Trie is O(M), where M is the height of the Trie, or the longest word in Trie.   
+
+Space Complexity:   
+1. The space complexity of hash table is O(M * N).
+2. The upper bound space complexity of Trie is also O(M * N), but it is always much samller than hashtables in practice.   
+
+### Implementation
 ```python
 class Node:
     def __init__(self):
