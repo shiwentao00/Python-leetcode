@@ -81,16 +81,16 @@ class Solution:
         shortest = [float('inf')] * (n + 1)
         shortest[start] = 0
             
-        # if shortest not changed for a iteration, algorithm has finished
-        changed = False
         # at most n - 1 iterations
         for _ in range(n - 1):
+            updated = False
             for src, dst, time in times:
                 #shortest[dst] = min(shortest[dst], shortest[src] + time)
                 if shortest[src] + time < shortest[dst]:
                     shortest[dst] = shortest[src] + time
-                    changed = True
-            if not changed:
+                    updated = True
+            # if shortest not changed for a iteration, algorithm has finished
+            if not updated:
                 break
                 
         max_time = max(shortest[1:])
