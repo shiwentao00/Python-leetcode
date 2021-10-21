@@ -29,7 +29,7 @@ The SPFA algorithm is an improved version of Bellman-ford. In the BF algorithm, 
 ### Complexity
 Upper bound time is still O(V⋅E), however, the the time is optimized. 
 
-Space Complexity: O(V)O(V). We need to store VV vertices.
+Space Complexity: O(V). We need to store V vertices.
 
 ## Implementation
 ### Naive Bellman-ford Algorithm
