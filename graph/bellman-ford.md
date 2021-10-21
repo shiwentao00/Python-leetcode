@@ -128,3 +128,13 @@ class Solution:
         else:
             return -1
 ```
+### Return the Shortest Path
+In addition to compute the length of the shortest path, we can also return the shortest path itself. Similar as what we do in the Dijkastra Algorithm, we keep another ```prev``` array, where ```prev[i]```is the previous node of i on the shortest path. ```prev[i]``` is updated whenever ```shortest[i]``` is updated. After the algorithm is done, we just need the following code to compute the shortest path:
+```python
+path = [end]
+while prev[path[-1]]:
+    path.append(prev[path[-1]])
+path.append(start)
+path.reverse()
+print("shortest path: ", path)
+```
