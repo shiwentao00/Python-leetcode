@@ -35,6 +35,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 
 ### Graph
+* [DFS to Traverse All Paths from Start to End](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/dfs_all_paths.md)
 * [Topological Sort](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/topological_sort.md)
 * [Union Find](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/union_find.md)
 * [Minimum Spanning Tree](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/minimum_spanning_tree.md)
