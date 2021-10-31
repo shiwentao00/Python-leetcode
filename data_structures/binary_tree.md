@@ -53,7 +53,7 @@ def inorderTraversal(self, root: TreeNode) -> List[int]:
                 inorder.append(root.val)
                 root = root.right # do NOT add if root.right!!!!!
                 
-        return res
+        return inorder
 ```
 
 Another implementation:
