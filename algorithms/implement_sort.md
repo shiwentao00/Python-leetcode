@@ -17,6 +17,34 @@ def quickSort(nums):
   return quickSort(left) + [pivot] + quickSort(right)
 ```
 
+A more efficient quick sort which sorts the array in-place:
+```python
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def partition(left, right):
+            pivot = nums[right]
+            wp = left
+            for i in range(left, right):
+                if nums[i] <= pivot:
+                    nums[wp], nums[i] = nums[i], nums[wp]
+                    wp += 1
+            nums[wp], nums[right] = nums[right], nums[wp]
+            return wp
+            
+        def quick_sort(left, right):
+            pivot = partition(left, right)
+            
+            if pivot > left:
+                quick_sort(left, pivot - 1)
+                
+            if pivot < right:
+                quick_sort(pivot + 1, right)
+        
+        random.shuffle(nums)
+        quick_sort(0, len(nums) - 1)
+        return nums
+```
+
 ## Merge Sort
 Merge sort breaks the array into units of length 1, then combine them with sorted order.
 ```python
