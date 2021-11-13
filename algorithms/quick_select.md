@@ -24,8 +24,7 @@ The difference of this implementation is that when partitioning the array to fin
 ```python
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
-        k = len(nums) - k + 1
-        k_idx = k - 1
+        k_idx = len(nums) - k
         
         def partition(left, right):
             """return a pivot index"""
