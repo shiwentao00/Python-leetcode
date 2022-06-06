@@ -77,29 +77,26 @@ Another implementation:
 ### Iiterative post-order traversal:
 My method uses another visited hashset to keep track of visited nodes:
 ```python
-    def postorderTraversal(self, root: TreeNode) -> List[int]:
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
-            return None
+            return []
         
         stack = [root]
         res = []
-        visited = set([root])
+        visited = set()
         while stack:
             top = stack[-1]
             # keep pushing left nodes to stack
             if top.left and top.left not in visited:
                 stack.append(top.left)
-                visited.add(top.left)
-            # keep pushing right nodes to stack if there is
-            # no left child
+            # if stack top has unvisited right child, push that first
             elif top.right and top.right not in visited:
                 stack.append(top.right)
-                visited.add(top.right)
-            # if there is no left and right child, or both children have
-            # been visited, we can pop the stack. 
+            # if stack top has no unvisited children, it's time to visit
             else:
-                # post order
                 node = stack.pop()
+                visited.add(node)
                 res.append(node.val)
                 
         return res
