@@ -22,6 +22,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Built-in string](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_string.md)
 * [Built-in array](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_array.md)
 * [Built-in list](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/built_in_list.md)
+* [Linked list](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/linked_list.md)
 * [Binary tree](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/binary_tree.md)
 * [Heap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/heap.md)
 * [Randomized set](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/randomizedSet.md)
