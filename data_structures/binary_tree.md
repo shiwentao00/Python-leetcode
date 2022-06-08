@@ -38,7 +38,7 @@ Reursive traversal of a binary tree is trivial DFS:
 ```
 
 ### Iiterative in-order traversal:
-An implementation that is easy to understand and memorize:
+Iterative inorder traversal is simple: go left as far as you can, then one step right. Repeat till the end of nodes in the tree:
 ```python
 def inorderTraversal(self, root: TreeNode) -> List[int]:
         stack = []
