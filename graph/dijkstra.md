@@ -28,7 +28,9 @@ def dijkstra(graph, n, start):
     min_dist = [float("inf")] * n
     min_dist[start] = 0
 
-    # use a heap to get the unvisited node that has shortest distance
+    # Use a heap to get the unvisited node that has shortest distance.
+    # The purpose of using heap is for faster look-up. In theory, you can also do
+    # linear searching in min_dist.
     # heap element: (dist, node)
     heap = [(0, start)]
 
