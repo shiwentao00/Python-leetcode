@@ -45,6 +45,9 @@ def dijkstra(graph, n, start):
         # when they are equal, the current node can be the one
         # that is in the "min_dist" table
         if min_dist[node] < dist: continue
+        # can also be
+        # if min_dist[node] != dist: continue
+        # because there is no way min_dist[node] > dist
 
         visited.add(node)
 
