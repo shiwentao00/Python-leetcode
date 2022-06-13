@@ -37,35 +37,23 @@ The Naive Bellman-ford Algorithm is useful to solve the minimum distance problem
 ```python
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
-        """Naive Bellman-ford"""
-        start, end = src, dst
-        # construct a graph, graph[i] is a tuple (src, price)
-        graph = [[] for _ in range(n)]
-        for src, dst, price in flights:
-            graph[dst].append((src, price))
-            
-        # dp_prev[i] is the min cost of using at most number of edges - 1 to get i from start
-        # dp[i] is the min cost of using at most the number of edges used to get i from start
-        dp_prev = [float('inf')] * n
-        dp_prev[start] = 0
+        # dp_prev[i] is the min cost of using at most k - 1 edges to reach i from start
+        # dp[i] is the min cost of using at most k edges to reach i from start
         dp = [float('inf')] * n
-        dp[start] = 0
-
-        # at most n - 1 edges on the shortest path, and k + 1 <= n - 1
-        # (k stops -> k + 1 edges)
-        # each iteration, we increase the most number of edges to use by 1
+        dp[src] = 0
+        dp_prev = dp.copy()
+        
         for _ in range(k + 1):
-            for node in range(n):
-                #if node == start:
-                #    continue
-                for src, price in graph[node]:
-                    dp[node] = min(dp[node], dp_prev[src] + price)
+            # iterate over all edges, can be arbitrary order
+            for s, d, price in flights:
+                dp[d] = min(dp[d], dp_prev[s] + price)
+                
             dp_prev = dp
             dp = [float('inf')] * n
-            dp[start] = 0
-        
-        if dp_prev[end] < float('inf'):
-            return dp_prev[end]
+            dp[src] = 0
+                
+        if dp_prev[dst] < float('inf'):
+            return dp_prev[dst]
         else:
             return -1
 ```
