@@ -33,6 +33,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Implement sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/implement_sort.md)
 * [Quick select](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/algorithms/quick_select.md)
 * [Binary search](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/binary_search.md)
+* [Bucket sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/bucket_sort.md)
 
 
 ### Graph
@@ -52,6 +53,11 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 
 ### Bit-wise Manipulation
 * [Sum of two integers](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/bit_manipulation/add_two_ints.md)
+
+### DP
+* [House Robber]()
+* [House Robber II]()
+* [Coin Change]()
 
 ### OOD
 * [Library Management System](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/OOD/library.md)
