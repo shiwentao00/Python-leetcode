@@ -27,7 +27,7 @@ Python cheat sheet for daily work and coding interveiws for those not good at me
 * [Heap](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/heap.md)
 * [Randomized set](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/data_structures/randomizedSet.md)
 * [Trie](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/data_structures/trie.md)
-* [Monotonic stack](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/data_structures/monotonic_stack.md))
+* [Monotonic stack](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/data_structures/monotonic_stack.md)
 
 ### Algorithms
 * [Built-in sort](https://github.com/Wentao-Shi/Python-cheat-sheet/blob/main/algorithms/built_in_sort.md)
