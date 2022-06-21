@@ -90,13 +90,14 @@ class Solution:
             # keep pushing left nodes to stack
             if top.left and top.left not in visited:
                 stack.append(top.left)
+                visited.add(top.left)
             # if stack top has unvisited right child, push that first
             elif top.right and top.right not in visited:
                 stack.append(top.right)
+                visited.add(top.right)
             # if stack top has no unvisited children, it's time to visit
             else:
                 node = stack.pop()
-                visited.add(node)
                 res.append(node.val)
                 
         return res
