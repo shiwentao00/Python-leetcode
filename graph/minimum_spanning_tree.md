@@ -20,7 +20,8 @@ Taking advantage of the cut property, we have the above mentioned two algorithms
     union(x, y)   
 4. Check if an MST is formed   
 ```
-Time complexity is O(ElogE + E&alpha;(V)) = O(ElogE). See [here](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/kruskal_algorithm.py) for an example implementation.
+Time complexity is O(ElogE + E&alpha;(V)) = O(ElogE). See [here](https://github.com/shiwentao00/Python-cheat-sheet/blob/main/graph/kruskal_algorithm.py) for an example implementation.   
+Example: Leetcode 1135. Connecting Cities With Minimum Cost
 
 ## Prim's algorithm with heap
 ```
